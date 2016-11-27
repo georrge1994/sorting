@@ -1,0 +1,8 @@
+Benchmark            (size)  Mode  Cnt       Score       Error  Units
+Main.measureRight_1       1  avgt    5       3,925 ±     0,544  ns/op
+Main.measureRight_1      10  avgt    5       9,495 ±     0,379  ns/op
+Main.measureRight_1     100  avgt    5      37,565 ±     2,346  ns/op
+Main.measureRight_1    1000  avgt    5    1609,843 ±    54,078  ns/op
+Main.measureRight_1   10000  avgt    5   27964,041 ±   707,930  ns/op
+Main.measureRight_1   50000  avgt    5   79636,731 ±  3237,705  ns/op
+Main.measureRight_1  100000  avgt    5  161013,175 ± 15754,144  ns/op

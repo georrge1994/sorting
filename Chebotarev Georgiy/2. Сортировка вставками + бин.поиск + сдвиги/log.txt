@@ -1,0 +1,237 @@
+"C:\Program Files\Java\jdk1.8.0_101\bin\java" -Didea.launcher.port=7534 "-Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.2.5\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\target\classes;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\junit-4.12.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\jmh-core-1.15.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\jopt-simple-4.6.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\commons-math3-3.2.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\hamcrest-core-1.3.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\junit-4.12-javadoc.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\junit-4.12-sources.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\jmh-core-1.15-javadoc.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\jmh-core-1.15-sources.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\jmh-generator-annprocess-1.15.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\jmh-generator-annprocess-1.15-javadoc.jar;C:\Users\Zhore\IdeaProjects\JMHSample_34_SafeLooping\src\sorting-master\lib\jmh-generator-annprocess-1.15-sources.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.2.5\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain com.company.Main
+# JMH 1.15 (released 58 days ago)
+# VM version: JDK 1.8.0_101, VM 25.101-b13
+# VM invoker: C:\Program Files\Java\jdk1.8.0_101\jre\bin\java.exe
+# VM options: -Didea.launcher.port=7534 -Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.2.5\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.company.Main.testSort
+# Parameters: (size = 1)
+
+# Run progress: 0,00% complete, ETA 00:01:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 33,367 ns/op
+# Warmup Iteration   2: 25,496 ns/op
+# Warmup Iteration   3: 24,439 ns/op
+# Warmup Iteration   4: 24,930 ns/op
+# Warmup Iteration   5: 26,002 ns/op
+Iteration   1: 24,917 ns/op
+Iteration   2: 24,499 ns/op
+Iteration   3: 24,457 ns/op
+Iteration   4: 24,746 ns/op
+Iteration   5: 24,455 ns/op
+
+
+Result "testSort":
+  24,615 ±(99.9%) 0,799 ns/op [Average]
+  (min, avg, max) = (24,455, 24,615, 24,917), stdev = 0,207
+  CI (99.9%): [23,816, 25,414] (assumes normal distribution)
+
+
+# JMH 1.15 (released 58 days ago)
+# VM version: JDK 1.8.0_101, VM 25.101-b13
+# VM invoker: C:\Program Files\Java\jdk1.8.0_101\jre\bin\java.exe
+# VM options: -Didea.launcher.port=7534 -Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.2.5\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.company.Main.testSort
+# Parameters: (size = 10)
+
+# Run progress: 14,29% complete, ETA 00:01:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 301,592 ns/op
+# Warmup Iteration   2: 303,141 ns/op
+# Warmup Iteration   3: 307,101 ns/op
+# Warmup Iteration   4: 334,126 ns/op
+# Warmup Iteration   5: 577,899 ns/op
+Iteration   1: 301,729 ns/op
+Iteration   2: 304,612 ns/op
+Iteration   3: 290,192 ns/op
+Iteration   4: 342,202 ns/op
+Iteration   5: 486,902 ns/op
+
+
+Result "testSort":
+  345,127 ±(99.9%) 314,315 ns/op [Average]
+  (min, avg, max) = (290,192, 345,127, 486,902), stdev = 81,627
+  CI (99.9%): [30,813, 659,442] (assumes normal distribution)
+
+
+# JMH 1.15 (released 58 days ago)
+# VM version: JDK 1.8.0_101, VM 25.101-b13
+# VM invoker: C:\Program Files\Java\jdk1.8.0_101\jre\bin\java.exe
+# VM options: -Didea.launcher.port=7534 -Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.2.5\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.company.Main.testSort
+# Parameters: (size = 100)
+
+# Run progress: 28,57% complete, ETA 00:00:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 8315,955 ns/op
+# Warmup Iteration   2: 12189,873 ns/op
+# Warmup Iteration   3: 7901,537 ns/op
+# Warmup Iteration   4: 6483,116 ns/op
+# Warmup Iteration   5: 6901,797 ns/op
+Iteration   1: 5769,763 ns/op
+Iteration   2: 6249,971 ns/op
+Iteration   3: 11851,492 ns/op
+Iteration   4: 8584,508 ns/op
+Iteration   5: 5751,349 ns/op
+
+
+Result "testSort":
+  7641,417 ±(99.9%) 10119,525 ns/op [Average]
+  (min, avg, max) = (5751,349, 7641,417, 11851,492), stdev = 2628,009
+  CI (99.9%): [? 0, 17760,942] (assumes normal distribution)
+
+
+# JMH 1.15 (released 58 days ago)
+# VM version: JDK 1.8.0_101, VM 25.101-b13
+# VM invoker: C:\Program Files\Java\jdk1.8.0_101\jre\bin\java.exe
+# VM options: -Didea.launcher.port=7534 -Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.2.5\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.company.Main.testSort
+# Parameters: (size = 1000)
+
+# Run progress: 42,86% complete, ETA 00:00:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 181571,204 ns/op
+# Warmup Iteration   2: 170098,848 ns/op
+# Warmup Iteration   3: 200099,934 ns/op
+# Warmup Iteration   4: 169090,125 ns/op
+# Warmup Iteration   5: 178161,459 ns/op
+Iteration   1: 164027,959 ns/op
+Iteration   2: 177859,575 ns/op
+Iteration   3: 162751,936 ns/op
+Iteration   4: 160920,833 ns/op
+Iteration   5: 162275,067 ns/op
+
+
+Result "testSort":
+  165567,074 ±(99.9%) 26804,488 ns/op [Average]
+  (min, avg, max) = (160920,833, 165567,074, 177859,575), stdev = 6961,040
+  CI (99.9%): [138762,586, 192371,562] (assumes normal distribution)
+
+
+# JMH 1.15 (released 58 days ago)
+# VM version: JDK 1.8.0_101, VM 25.101-b13
+# VM invoker: C:\Program Files\Java\jdk1.8.0_101\jre\bin\java.exe
+# VM options: -Didea.launcher.port=7534 -Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.2.5\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.company.Main.testSort
+# Parameters: (size = 10000)
+
+# Run progress: 57,14% complete, ETA 00:00:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 2538547,587 ns/op
+# Warmup Iteration   2: 2427042,010 ns/op
+# Warmup Iteration   3: 2515893,789 ns/op
+# Warmup Iteration   4: 2540393,860 ns/op
+# Warmup Iteration   5: 2402281,163 ns/op
+Iteration   1: 2368308,558 ns/op
+Iteration   2: 2553964,895 ns/op
+Iteration   3: 2380480,570 ns/op
+Iteration   4: 2364524,125 ns/op
+Iteration   5: 2362927,479 ns/op
+
+
+Result "testSort":
+  2406041,125 ±(99.9%) 319516,321 ns/op [Average]
+  (min, avg, max) = (2362927,479, 2406041,125, 2553964,895), stdev = 82977,374
+  CI (99.9%): [2086524,805, 2725557,446] (assumes normal distribution)
+
+
+# JMH 1.15 (released 58 days ago)
+# VM version: JDK 1.8.0_101, VM 25.101-b13
+# VM invoker: C:\Program Files\Java\jdk1.8.0_101\jre\bin\java.exe
+# VM options: -Didea.launcher.port=7534 -Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.2.5\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.company.Main.testSort
+# Parameters: (size = 50000)
+
+# Run progress: 71,43% complete, ETA 00:00:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 16355799,435 ns/op
+# Warmup Iteration   2: 16357227,242 ns/op
+# Warmup Iteration   3: 15024876,179 ns/op
+# Warmup Iteration   4: 14148637,127 ns/op
+# Warmup Iteration   5: 13984956,694 ns/op
+Iteration   1: 14526141,652 ns/op
+Iteration   2: 14045238,139 ns/op
+Iteration   3: 13970107,569 ns/op
+Iteration   4: 13798156,438 ns/op
+Iteration   5: 13990005,375 ns/op
+
+
+Result "testSort":
+  14065929,835 ±(99.9%) 1052558,014 ns/op [Average]
+  (min, avg, max) = (13798156,438, 14065929,835, 14526141,652), stdev = 273345,974
+  CI (99.9%): [13013371,821, 15118487,848] (assumes normal distribution)
+
+
+# JMH 1.15 (released 58 days ago)
+# VM version: JDK 1.8.0_101, VM 25.101-b13
+# VM invoker: C:\Program Files\Java\jdk1.8.0_101\jre\bin\java.exe
+# VM options: -Didea.launcher.port=7534 -Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 2016.2.5\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.company.Main.testSort
+# Parameters: (size = 100000)
+
+# Run progress: 85,71% complete, ETA 00:00:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 35855946,214 ns/op
+# Warmup Iteration   2: 34559780,655 ns/op
+# Warmup Iteration   3: 33513347,300 ns/op
+# Warmup Iteration   4: 39189406,192 ns/op
+# Warmup Iteration   5: 31397193,281 ns/op
+Iteration   1: 32762987,625 ns/op
+Iteration   2: 38185288,963 ns/op
+Iteration   3: 31925105,844 ns/op
+Iteration   4: 32044234,313 ns/op
+Iteration   5: 33051694,419 ns/op
+
+
+Result "testSort":
+  33593862,233 ±(99.9%) 10050769,399 ns/op [Average]
+  (min, avg, max) = (31925105,844, 33593862,233, 38185288,963), stdev = 2610152,895
+  CI (99.9%): [23543092,834, 43644631,632] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:15
+
+Benchmark      (size)  Mode  Cnt         Score          Error  Units
+Main.testSort       1  avgt    5        24,615 ±        0,799  ns/op
+Main.testSort      10  avgt    5       345,127 ±      314,315  ns/op
+Main.testSort     100  avgt    5      7641,417 ±    10119,525  ns/op
+Main.testSort    1000  avgt    5    165567,074 ±    26804,488  ns/op
+Main.testSort   10000  avgt    5   2406041,125 ±   319516,321  ns/op
+Main.testSort   50000  avgt    5  14065929,835 ±  1052558,014  ns/op
+Main.testSort  100000  avgt    5  33593862,233 ± 10050769,399  ns/op
+
+Process finished with exit code 0
